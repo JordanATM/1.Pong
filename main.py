@@ -25,7 +25,6 @@ ball_speed_y = 7
 
 player_score = 0
 opponent_score = 0
-time = 3
 
 font = pygame.font.Font(None, 74)
 while True:
@@ -71,6 +70,8 @@ while True:
         player.y -= 5
     if keys[pygame.K_DOWN]:
         player.y += 5
+    if keys[pygame.K_SPACE]:
+        ball_speed_x *= -5
 
 
     # Visuals
